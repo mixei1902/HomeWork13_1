@@ -5,23 +5,23 @@ from main import Category, Product
 
 @pytest.fixture
 def category():
-    return Category("Electronics", "Devices and gadgets", ["Laptop", "Phone"])
+    return Category("food", "meat", ["pork", "chiken"])
 
 
 @pytest.fixture
 def product():
-    return Product("Laptop", "Portable computer", 1000.99, 10)
+    return Product("fruit", "fresh fruits", 120, 10)
 
 
 def test_category_initialization(category):
-    assert category.name == "Electronics"
-    assert category.description == "Devices and gadgets"
-    assert category.products == ["Laptop", "Phone"]
+    assert category.name == "food"
+    assert category.description == "meat"
+    assert category.products == ["pork", "chiken"]
 
 
 def test_product_initialization(product):
-    assert product.name == "Laptop"
-    assert product.description == "Portable computer"
+    assert product.name == "fruit"
+    assert product.description == "fresh fruit"
     assert product.price == 1000.99
     assert product.quantity == 10
 
