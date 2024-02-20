@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d382d18f-1331-4693-aef9-74ffa7e62ede" name="Changes" comment="inicial_5" />
+    <list default="true" id="d382d18f-1331-4693-aef9-74ffa7e62ede" name="Changes" comment="inicial">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,32 +22,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;history&quot;: [
-    {
-      &quot;state&quot;: &quot;OPEN&quot;,
-      &quot;author&quot;: &quot;mixei1902&quot;
-    }
-  ],
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;author&quot;: &quot;mixei1902&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="3459df35-1517-4f33-8678-5e6dd40ad993" />
-        <option name="url" value="https://github.com/mixei1902/HomeWork13_1.git" />
-      </UrlAndAccount>
-    </option>
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 0
-}</component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
   <component name="ProjectId" id="2cahsCoCgmfpiJQYM40exay4NTK" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -54,70 +33,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Python tests.Python tests for test.test_product_count.executor": "Run",
-    "Python tests.Python tests for test_category.test_category_count.executor": "Run",
-    "Python tests.Python tests for test_category.test_category_initialization.executor": "Run",
-    "Python tests.Python tests for test_product.test_product_initialization.executor": "Run",
     "Python tests.Python tests in test.py.executor": "Run",
-    "Python tests.Python tests in test_product.py.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "settings.editor.selected.configurable": "preferences.keymap"
+    "git-widget-placeholder": "main"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\VR\PycharmProjects\skyENG_32\HomeWork13_1\HomeWork13\src" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_category.test_category_initialization">
-    <configuration name="Python tests for test_category.test_category_count" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="HomeWork13" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_category.test_category_count&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_category.test_category_initialization" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="HomeWork13" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_category.test_category_initialization&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_product.test_product_initialization" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="HomeWork13" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_product.test_product_initialization&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test.test_product_count" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="Python tests in test.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="HomeWork13" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -128,32 +51,13 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test.test_product_count&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests in test_product.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="HomeWork13" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_product.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_category.test_category_initialization" />
-        <item itemvalue="Python tests.Python tests for test_product.test_product_initialization" />
-        <item itemvalue="Python tests.Python tests in test_product.py" />
-        <item itemvalue="Python tests.Python tests for test_category.test_category_count" />
-        <item itemvalue="Python tests.Python tests for test.test_product_count" />
+        <item itemvalue="Python tests.Python tests in test.py" />
       </list>
     </recent_temporary>
   </component>
@@ -181,74 +85,11 @@
       <option name="project" value="LOCAL" />
       <updated>1708359218820</updated>
     </task>
-    <task id="LOCAL-00002" summary="inicial_2">
-      <option name="closed" value="true" />
-      <created>1708359820559</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1708359820559</updated>
-    </task>
-    <task id="LOCAL-00003" summary="inicial_3">
-      <option name="closed" value="true" />
-      <created>1708360317790</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1708360317790</updated>
-    </task>
-    <task id="LOCAL-00004" summary="inicial_4">
-      <option name="closed" value="true" />
-      <created>1708441860766</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1708441860767</updated>
-    </task>
-    <task id="LOCAL-00005" summary="inicial_4">
-      <option name="closed" value="true" />
-      <created>1708448831215</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1708448831215</updated>
-    </task>
-    <task id="LOCAL-00006" summary="inicial_5">
-      <option name="closed" value="true" />
-      <created>1708449377618</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1708449377618</updated>
-    </task>
-    <task id="LOCAL-00007" summary="inicial_5">
-      <option name="closed" value="true" />
-      <created>1708449780945</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1708449780945</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="2" />
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="inicial" />
-    <MESSAGE value="inicial_2" />
-    <MESSAGE value="inicial_3" />
-    <MESSAGE value="inicial_4" />
-    <MESSAGE value="inicial_5" />
-    <option name="LAST_COMMIT_MESSAGE" value="inicial_5" />
+    <option name="LAST_COMMIT_MESSAGE" value="inicial" />
   </component>
 </project>
