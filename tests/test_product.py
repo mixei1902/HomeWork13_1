@@ -10,6 +10,6 @@ def product():
 
 def test_product_initialization(product):
     assert product.name == "fruit"
-    assert product.description == "fresh fruit"
+    assert product.description == "fresh fruits"
     assert product.price == 120
     assert product.quantity == 10

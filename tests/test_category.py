@@ -5,13 +5,13 @@ from src.category import Category
 
 @pytest.fixture
 def category():
-    return Category("food", "meat", ["pork", "chiken"])
+    return Category("food", "meat", ("pork", "chiken"))
 
 
 def test_category_initialization(category):
     assert category.name == "food"
     assert category.description == "meat"
-    assert category.products == ["pork", "chiken"]
+    assert category.products == ("pork", "chiken")
 
 
 def test_category_count(category):
