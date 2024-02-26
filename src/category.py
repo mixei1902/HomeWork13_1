@@ -8,12 +8,12 @@ class Category:
     def __init__(self, name: str, description: str, products: list):
         self.name = name
         self.description = description
-        self.products = products if products else []
+        self.__products = products if products else []
         Category.total_categories += 1
-        Category.total_unique_products += len(products)
+        Category.total_unique_products += len(self.__products)
 
     def add_product(self, product):
-        self.products.append(product)
+        self.__products.append(product)
         Category.total_unique_products += 1
 
     @property
@@ -23,4 +23,4 @@ class Category:
 
     @products.setter
     def products(self, value):
-        self._products = value
+        self.__products = value
