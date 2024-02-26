@@ -24,3 +24,6 @@ class Category:
     @products.setter
     def products(self, value):
         self.__products = value
+
+    def __str__(self):
+        return f"{self.name}, количество продуктов: {Category.total_unique_products} шт."

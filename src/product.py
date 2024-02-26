@@ -19,8 +19,15 @@ class Product:
         return self.__price
 
     @price.setter
-    def price(self, value):
+    def price(self, value: int):
         if value <= 0:
             print("Цена введена некорректная")
         else:
             self.price = value
+
+    def __str__(self):
+        return f"{self.name}, {self.price} руб. Остаток: {self.quantity} шт."
+
+    def __add__(self, other):
+        if isinstance(other, Product):
+            return self.price * self.quantity + other.price * other.quantity

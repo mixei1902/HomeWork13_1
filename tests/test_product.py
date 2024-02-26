@@ -13,3 +13,17 @@ def test_product_initialization(product):
     assert product.description == "fresh fruits"
     assert product.price == 120
     assert product.quantity == 10
+
+def test_product():
+    product = Product("fruit", "fresh fruits", 120.0, 10)
+    assert str(product) == "fruit, 120.0 руб. Остаток: 10 шт."
+    # assert product.price == 120.0
+    # product.price = 200.0
+    # assert product.price == 200.0
+    # product.price = -1.0
+    # assert product.price == 200.0 #переменная не должна измениться так как введено отрицательное значение
+
+def test_product_addition():
+    product1 = Product("fruit", "fresh fruits", 100.0, 10)
+    product2 = Product("fruit", "fresh fruits", 200.0, 20)
+    assert product1 + product2 == 100.0 * 10 + 200.0 * 20
