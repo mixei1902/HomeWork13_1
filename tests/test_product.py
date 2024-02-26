@@ -20,8 +20,6 @@ def test_product():
     # assert product.price == 120.0
     # product.price = 200.0
     # assert product.price == 200.0
-    # product.price = -1.0
-    # assert product.price == 200.0 #переменная не должна измениться так как введено отрицательное значение
 
 def test_product_addition():
     product1 = Product("fruit", "fresh fruits", 100.0, 10)
