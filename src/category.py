@@ -19,7 +19,7 @@ class Category:
     @property
     def products(self):
         return "\n".join(
-            [f"{product.name}, {product.price} руб. Остаток: {product.quantity} шт." for product in self.products])
+            [f"{product.name}, {product.price} руб. Остаток: {product.quantity} шт." for product in self.__products])
 
     @products.setter
     def products(self, value):

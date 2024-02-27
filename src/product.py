@@ -23,7 +23,7 @@ class Product:
         if value <= 0:
             print("Цена введена некорректная")
         else:
-            self.price = value
+            self.__price = value
 
     def __str__(self):
         return f"{self.name}, {self.price} руб. Остаток: {self.quantity} шт."
@@ -31,3 +31,4 @@ class Product:
     def __add__(self, other):
         if isinstance(other, Product):
             return self.price * self.quantity + other.price * other.quantity
+        return NotImplemented
