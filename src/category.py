@@ -1,4 +1,5 @@
 class Category:
+    """ Класс категории товаров """
     name: str
     description: str
     products: list

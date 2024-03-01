@@ -22,6 +22,7 @@ def test_category_count(category):
 def test_product_count(category):
     assert Category.total_unique_products == 2
 
+
 def test_category():
     product1 = Product("Товар 1", "Описание товара 1", 100.0, 10)
     product2 = Product("Товар 2", "Описание товара 2", 200.0, 20)
