@@ -33,3 +33,31 @@ class Product:
         if isinstance(other, Product):
             return self.price * self.quantity + other.price * other.quantity
         return NotImplemented
+
+
+class Smartphone(Product):
+    """ Подкласс для продуктов типа Смартфон """
+
+    def __init__(self, name: str, description: str, price: float, quantity: int, performance: str, model: str,
+                 memory: int, color: str):
+        super().__init__(name, description, price, quantity)
+        self.performance = performance
+        self.model = model
+        self.memory = memory
+        self.color = color
+
+
+class LawnGrass(Product):
+    """ Подкласс для продуктов типа Трава газонная """
+
+    def __init__(self, name: str, description: str, price: float, quantity: int, country: str, germination_period: str,
+                 color: str):
+        super().__init__(name, description, price, quantity)
+        self.country = country
+        self.germination_period = germination_period
+        self.color = color
+
+    def __add__(self, other):
+        if isinstance(other, LawnGrass):
+            return super().__add__(other)
+        return NotImplemented

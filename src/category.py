@@ -1,3 +1,6 @@
+from src.product import Product
+
+
 class Category:
     """ Класс категории товаров """
     name: str
@@ -14,8 +17,11 @@ class Category:
         Category.total_unique_products += len(self.__products)
 
     def add_product(self, product):
-        self.__products.append(product)
-        Category.total_unique_products += 1
+        if isinstance(product, Product):
+            self.__products.append(product)
+            Category.total_unique_products += 1
+        else:
+            raise TypeError("Можно добавить только экземпляры класса Product или его подклассов.")
 
     @property
     def products(self):
