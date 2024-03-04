@@ -30,7 +30,8 @@ class Product:
         return f"{self.name}, {self.price} руб. Остаток: {self.quantity} шт."
 
     def __add__(self, other):
-        if isinstance(other, Product):
+        """ складывает товары только из одинаковых классов продуктов """
+        if type(self) == type(other):
             return self.price * self.quantity + other.price * other.quantity
         return NotImplemented
 
@@ -57,7 +58,3 @@ class LawnGrass(Product):
         self.germination_period = germination_period
         self.color = color
 
-    def __add__(self, other):
-        if isinstance(other, LawnGrass):
-            return super().__add__(other)
-        return NotImplemented
