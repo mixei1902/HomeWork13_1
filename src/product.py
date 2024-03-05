@@ -18,7 +18,7 @@ class AbstractProduct(ABC, LoggableMixin):
         self.description = description
         self.price = price
         self.quantity = quantity
-        print(self)
+        print(repr(self))
 
     # @abstractmethod
     # def __add__(self, other):
