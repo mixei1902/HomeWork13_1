@@ -28,6 +28,10 @@ class Category:
         return "\n".join(
             [f"{product.name}, {product.price} руб. Остаток: {product.quantity} шт." for product in self.__products])
 
+    @property
+    def product_list(self):
+        return self.__products
+
     @products.setter
     def products(self, value):
         self.__products = value

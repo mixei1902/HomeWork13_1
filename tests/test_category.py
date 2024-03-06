@@ -43,4 +43,4 @@ def test_category_add_product():
     category = Category('Test Category', 'Test category description', [])
     product = Product('Test', 'Test product', 10.0, 5)
     category.add_product(product)
-    assert product in category.products #  не могу понять ошибку для данного тест
+    assert product in category.product_list

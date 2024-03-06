@@ -4,28 +4,31 @@ from abc import ABC, abstractmethod
 class LoggableMixin:
     """ Миксин для вывода информации о создании объекта """
 
+    def __init__(self):
+        print(repr(self))
+
     def __repr__(self):
-        attrs = ", ".join(f"{k}={v}" for k, v in self.__dict__.items())
+        attrs = ", ".join(f"{k}={v}" for k, v in vars(self).items())
         return f"{self.__class__.__name__}({attrs})"
 
 
-class AbstractProduct(ABC, LoggableMixin):
+class AbstractProduct(ABC):
     """ Абстрактный класс продукта """
 
     @abstractmethod
     def __init__(self, name: str, description: str, price: float, quantity: int):
-        self.name = name
-        self.description = description
-        self.price = price
-        self.quantity = quantity
-        print(repr(self))
+        pass
 
-    # @abstractmethod
-    # def __add__(self, other):
-    #     pass
+    @abstractmethod
+    def create_product(cls, name: str, description: str, price: float, quantity: int):
+        pass
+
+    @abstractmethod
+    def __add__(self, other):
+        pass
 
 
-class Product(AbstractProduct):
+class Product(LoggableMixin, AbstractProduct):
     """ Класс катеогрии продуктов """
     name: str
     description: str
@@ -33,7 +36,11 @@ class Product(AbstractProduct):
     quantity: int
 
     def __init__(self, name: str, description: str, price: float, quantity: int):
-        super().__init__(name, description, price, quantity)
+        self.name = name
+        self.description = description
+        self.price = price
+        self.quantity = quantity
+        super().__init__()
 
     @classmethod
     def create_product(cls, name: str, description: str, price: float, quantity: int):
@@ -70,7 +77,7 @@ class Smartphone(Product):
         self.model = model
         self.memory = memory
         self.color = color
-
+        print(repr(self))# только так получается выводить все поля объекта
 
 class LawnGrass(Product):
     """ Подкласс для продуктов типа Трава газонная """
@@ -81,3 +88,4 @@ class LawnGrass(Product):
         self.country = country
         self.germination_period = germination_period
         self.color = color
+        print(repr(self)) #только так получается выводить все поля объекта
