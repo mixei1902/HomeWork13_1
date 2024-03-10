@@ -1,6 +1,6 @@
 import pytest
 
-from src.category import Category
+from src.category import Category, ZeroQuantityError
 from src.product import Product
 
 
@@ -43,4 +43,25 @@ def test_category_add_product():
     category = Category('Test Category', 'Test category description', [])
     product = Product('Test', 'Test product', 10.0, 5)
     category.add_product(product)
-    assert product in category.product_list
+    assert len(category.product_list) == 1
+
+
+def test_category_add_zero_quantity_product():
+    category = Category("Test Category", "This is a test category", [])
+    with pytest.raises(ZeroQuantityError):
+        product = Product("Test Product", "This is a test product", 100.0, 0)
+        category.add_product(product)
+
+
+def test_category_average_price():
+    category = Category("Test Category", "This is a test category", [])
+    product1 = Product("Test Product 1", "This is a test product", 100.0, 10)
+    product2 = Product("Test Product 2", "This is another test product", 200.0, 5)
+    category.add_product(product1)
+    category.add_product(product2)
+    assert category.average_price() == 150.0
+
+
+def test_category_average_price_no_products():
+    category = Category("Test Category", "This is a test category", [])
+    assert category.average_price() == 0
