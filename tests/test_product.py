@@ -35,7 +35,7 @@ def test_product_addition(product):
 
 def test_smartphone():
     """ тестирование класса Smartphone"""
-    smartphone = Smartphone("iPhone 13", "Смартфон от Apple", 1000, 5, "Высокая", 13, 64, "Черный")
+    smartphone = Smartphone("iPhone 13", "Смартфон от Apple", 1000, 5, "Высокая", '13', 64, "Черный")
     assert smartphone.name == "iPhone 13"
     assert smartphone.description == "Смартфон от Apple"
     assert smartphone.price == 1000

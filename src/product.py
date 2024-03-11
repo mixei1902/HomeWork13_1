@@ -20,6 +20,10 @@ class AbstractProduct(ABC):
         pass
 
     @abstractmethod
+    def create_product(cls, *args, **kwargs):
+        pass
+
+    @abstractmethod
     def __add__(self, other):
         pass
 
@@ -57,7 +61,7 @@ class Product(LoggableMixin, AbstractProduct):
         return f"{self.name}, {self.price} руб. Остаток: {self.quantity} шт."
 
     def __add__(self, other):
-        """ складывает товары только из одинаковых классов продуктов """
+        """ Складывает товары только из одинаковых классов продуктов """
         if type(self) == type(other):
             return self.price * self.quantity + other.price * other.quantity
         raise TypeError("не одинаковый класс продукта!")
@@ -74,10 +78,6 @@ class Smartphone(Product):
         self.color = color
         super().__init__(name, description, price, quantity)
 
-    @classmethod
-    def create_product(cls, name, description, price, quantity, performance, model, memory, color):
-        return cls(name, description, price, quantity, performance, model, memory, color)
-
 
 class LawnGrass(Product):
     """ Подкласс для продуктов типа Трава газонная """
@@ -88,8 +88,4 @@ class LawnGrass(Product):
         self.germination_period = germination_period
         self.color = color
         super().__init__(name, description, price, quantity)
-
-    @classmethod
-    def create_product(cls, name, description, price, quantity, country, germination_period, color):
-        return cls(name, description, price, quantity, country, germination_period, color)
 
