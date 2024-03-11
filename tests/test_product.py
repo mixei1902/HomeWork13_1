@@ -48,14 +48,14 @@ def test_smartphone():
 
 def test_lawn_grass():
     """ тестирование класса LawnGrass """
-    lawn_grass = LawnGrass("Test Lawn Grass", "This is a test lawn grass", 500, 20, "USA", "7 days", "Green")
-    assert lawn_grass.name == "Test Lawn Grass"
-    assert lawn_grass.description == "This is a test lawn grass"
+    lawn_grass = LawnGrass("Газонная трава", "Трава для газона", 500, 20, "Россия", "7 дней", "Зеленый")
+    assert lawn_grass.name == "Газонная трава"
+    assert lawn_grass.description == "Трава для газона"
     assert lawn_grass.price == 500
     assert lawn_grass.quantity == 20
-    assert lawn_grass.country == "USA"
-    assert lawn_grass.germination_period == "7 days"
-    assert lawn_grass.color == "Green"
+    assert lawn_grass.country == "Россия"
+    assert lawn_grass.germination_period == "7 дней"
+    assert lawn_grass.color == "Зеленый"
 
 # new_smartphone = Smartphone.create_product("iPhone 13", "Смартфон от Apple", 100000, 10, "Высокая", "13", 128, "Черный")
 # new_lawn_grass = LawnGrass.create_product("Газонная трава", "Трава для газона", 500, 50, "Россия", "7 дней", "Зеленый")
