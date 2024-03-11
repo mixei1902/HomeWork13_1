@@ -35,15 +35,15 @@ def test_product_addition(product):
 
 def test_smartphone():
     """ тестирование класса Smartphone"""
-    smartphone = Smartphone("Test Smartphone", "This is a test smartphone", 1000, 5, "High", "Model X", 64, "Black")
-    assert smartphone.name == "Test Smartphone"
-    assert smartphone.description == "This is a test smartphone"
+    smartphone = Smartphone("iPhone 13", "Смартфон от Apple", 1000, 5, "Высокая", 13, 64, "Черный")
+    assert smartphone.name == "iPhone 13"
+    assert smartphone.description == "Смартфон от Apple"
     assert smartphone.price == 1000
     assert smartphone.quantity == 5
-    assert smartphone.performance == "High"
-    assert smartphone.model == "Model X"
+    assert smartphone.performance == "Высокая"
+    assert smartphone.model == 13
     assert smartphone.memory == 64
-    assert smartphone.color == "Black"
+    assert smartphone.color == "Черный"
 
 
 def test_lawn_grass():
@@ -56,3 +56,27 @@ def test_lawn_grass():
     assert lawn_grass.country == "USA"
     assert lawn_grass.germination_period == "7 days"
     assert lawn_grass.color == "Green"
+
+# new_smartphone = Smartphone.create_product("iPhone 13", "Смартфон от Apple", 100000, 10, "Высокая", "13", 128, "Черный")
+# new_lawn_grass = LawnGrass.create_product("Газонная трава", "Трава для газона", 500, 50, "Россия", "7 дней", "Зеленый")
+
+def test_create_product_smartphone():
+    name = "iPhone 13"
+    description = "Смартфон от Apple"
+    price = 100000
+    quantity = 10
+    performance = "Высокая"
+    model = "13"
+    memory = 128
+    color = "Черный"
+
+    product = Smartphone.create_product(name, description, price, quantity, performance, model, memory, color)
+
+    assert product.name == name
+    assert product.description == description
+    assert product.price == price
+    assert product.quantity == quantity
+    assert product.performance == performance
+    assert product.model == model
+    assert product.memory == memory
+    assert product.color == color

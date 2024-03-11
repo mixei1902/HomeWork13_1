@@ -20,10 +20,6 @@ class AbstractProduct(ABC):
         pass
 
     @abstractmethod
-    def create_product(cls, name: str, description: str, price: float, quantity: int):
-        pass
-
-    @abstractmethod
     def __add__(self, other):
         pass
 
@@ -72,20 +68,28 @@ class Smartphone(Product):
 
     def __init__(self, name: str, description: str, price: float, quantity: int, performance: str, model: str,
                  memory: int, color: str):
-        super().__init__(name, description, price, quantity)
         self.performance = performance
         self.model = model
         self.memory = memory
         self.color = color
-        print(repr(self))# только так получается выводить все поля объекта
+        super().__init__(name, description, price, quantity)
+
+    @classmethod
+    def create_product(cls, name, description, price, quantity, performance, model, memory, color):
+        return cls(name, description, price, quantity, performance, model, memory, color)
+
 
 class LawnGrass(Product):
     """ Подкласс для продуктов типа Трава газонная """
 
     def __init__(self, name: str, description: str, price: float, quantity: int, country: str, germination_period: str,
                  color: str):
-        super().__init__(name, description, price, quantity)
         self.country = country
         self.germination_period = germination_period
         self.color = color
-        print(repr(self)) #только так получается выводить все поля объекта
+        super().__init__(name, description, price, quantity)
+
+    @classmethod
+    def create_product(cls, name, description, price, quantity, country, germination_period, color):
+        return cls(name, description, price, quantity, country, germination_period, color)
+
