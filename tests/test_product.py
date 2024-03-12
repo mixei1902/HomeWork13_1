@@ -41,7 +41,7 @@ def test_smartphone():
     assert smartphone.price == 1000
     assert smartphone.quantity == 5
     assert smartphone.performance == "Высокая"
-    assert smartphone.model == 13
+    assert smartphone.model == '13'
     assert smartphone.memory == 64
     assert smartphone.color == "Черный"
 
@@ -56,6 +56,7 @@ def test_lawn_grass():
     assert lawn_grass.country == "Россия"
     assert lawn_grass.germination_period == "7 дней"
     assert lawn_grass.color == "Зеленый"
+
 
 # new_smartphone = Smartphone.create_product("iPhone 13", "Смартфон от Apple", 100000, 10, "Высокая", "13", 128, "Черный")
 # new_lawn_grass = LawnGrass.create_product("Газонная трава", "Трава для газона", 500, 50, "Россия", "7 дней", "Зеленый")
@@ -80,3 +81,4 @@ def test_create_product_smartphone():
     assert product.model == model
     assert product.memory == memory
     assert product.color == color
+#тест на создание продукта не проходит, сообщает что takes 5 positional arguments but 9 were given

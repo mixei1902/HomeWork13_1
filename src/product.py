@@ -78,6 +78,11 @@ class Smartphone(Product):
         self.color = color
         super().__init__(name, description, price, quantity)
 
+    @classmethod
+    def create_product(cls, name: str, description: str, price: float, quantity: int, performance: str, model: str,
+                       memory: int, color: str):
+        return cls(name, description, price, quantity, performance, model, memory, color)
+    #получается тест только если переопределить метод create_product
 
 class LawnGrass(Product):
     """ Подкласс для продуктов типа Трава газонная """
@@ -88,4 +93,3 @@ class LawnGrass(Product):
         self.germination_period = germination_period
         self.color = color
         super().__init__(name, description, price, quantity)
-
