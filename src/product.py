@@ -19,6 +19,7 @@ class AbstractProduct(ABC):
     def __init__(self, name: str, description: str, price: float, quantity: int):
         pass
 
+    @classmethod
     @abstractmethod
     def create_product(cls, *args, **kwargs):
         pass
@@ -93,3 +94,8 @@ class LawnGrass(Product):
         self.germination_period = germination_period
         self.color = color
         super().__init__(name, description, price, quantity)
+
+    @classmethod
+    def create_product(cls, name: str, description: str, price: float, quantity: int, country: str, germination_period: str,
+                 color: str):
+        return cls(name, description, price, quantity, country, germination_period, color)

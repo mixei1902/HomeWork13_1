@@ -81,4 +81,23 @@ def test_create_product_smartphone():
     assert product.model == model
     assert product.memory == memory
     assert product.color == color
-#тест на создание продукта не проходит, сообщает что takes 5 positional arguments but 9 were given
+
+
+def test_create_product_lawngrass():
+    name = "Газонная трава"
+    description = "Трава для газона"
+    price = 500
+    quantity = 50
+    country = "Россия"
+    germination_period = "7 дней"
+    color = "Зеленый"
+
+    product = LawnGrass.create_product(name, description, price, quantity, country, germination_period, color)
+
+    assert product.name == name
+    assert product.description == description
+    assert product.price == price
+    assert product.quantity == quantity
+    assert product.country == country
+    assert product.germination_period == germination_period
+    assert product.color == color
